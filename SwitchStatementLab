@@ -1,0 +1,27 @@
+// criar um switch statement para comentar os resultados de um dado
+
+// número aleatório para o lado do dado
+var diceNumber = Math.floor(Math.random()*6);
+
+switch (diceNumber){
+case 0:
+alert('fueeen! tirou 1')
+break;
+case 1:
+alert('muito fraco :( 2');
+break;
+case 2:
+alert('dá pra melhorar 3');
+break;
+case 3:
+alert('opa! 4');
+break;
+case 4:
+alert('Boa jogada! 5');
+break;
+case 5:
+alert('Eita! 6zão!');
+break;
+default: alert('não jogou ainda')
+break;
+}
