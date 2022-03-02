@@ -1,0 +1,6 @@
+//teste de Immediate Invoked Function Expression
+//IFFES não fazem parte do resto do programa e variáveis dentro dela não conflitam com var fora dos parênteses dela
+
+(function(person, dog) {
+return person + 'is taking ' + dog + ' for a walk.'
+}('Verenice', 'tigrão'))
