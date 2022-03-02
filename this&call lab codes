@@ -1,0 +1,41 @@
+//call method review
+//calls a function with given 'this' value and arguments provided individualy
+//call - for individual arguments
+//apply - array arguments
+//C(all) - arguments separated by commas
+//A(pply) - arguments of an array
+
+//exemplo de programa de teste para this e call
+//quase-ficha de rpg para ter uma característica de string e integer
+
+var character1 = function(){
+strenght: 1
+agility: 3
+'bard'
+}
+var character2 = function(){
+strenght: 4
+agility: 5
+'paladin'
+}
+
+var presentation = function(){
+console.log('this is ' + this.character1 + 'and that is ' + this.character2)
+}
+presentation.call();
+
+//exemplo do curso com strings
+
+var person2 = {name: 'Sarah'};
+var languages = ['English','Spanish','German']
+var myLanguages = function(){
+console.log('my name is '+person2.name+ ' and I speak ')
+}
+myLanguages.call();
+
+//exemplo do challenge
+
+var person1 = {
+name: 'Tim'
+}
+myLanguages
