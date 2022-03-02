@@ -1,0 +1,23 @@
+//array com elementos para a variável 'randomBodyParts'
+var randomBodyParts = ['faced', 'nosed', 'teeth', 'leged', 'arms'];
+//array extra pra contar o número de elementos na variável
+var lenBodyParts = randomBodyParts.length
+
+//array para adjetos para as partes 'randomAdjectives'
+var randomAdjectives = ['flobby', 'puny', 'pathetic', 'squigly', 'decrepid'];
+//array extra pra contar o número de elementos na variável
+var lenAdj = randomAdjectives.length
+
+//array para palavras aleatórias 'randomWords'
+var randomWords = ['Fly', 'Baboon', 'Gargoyle', 'gazoo'];
+//array extra pra contar o número de elementos na variável
+var lenWord = randomWords.length
+
+//variável recebe o valor de um dos elementos aleatoriamente
+var randomBodyPart = Math.floor[Math.random()*lenBodyParts]
+
+var randomAdjective = Math.floor[Math.random()*lenAdj]
+
+var randomWord = Math.floor[Math.random()*lenWord]
+
+console.log('you are a ', randomAdjective,' ', randomBodyPart,' ', randomWord,);
