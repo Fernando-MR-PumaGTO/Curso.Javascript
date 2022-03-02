@@ -1,0 +1,69 @@
+//mini app tipo jo ken po
+//uso de condicionais
+
+//**função para pegar a escolha do usuário
+function getUserChoice(userImput){
+userImput = userImput.toLowerCase();
+
+//**condicional para testar se a escolha do usuário é uma variável válida
+if (userImput === 'urso' || userImput === 'humano' || userImput === 'arma'){
+return userImput;
+}
+else{
+return 'favor fazer uma escolha válida';
+}
+}
+
+//**função para pegar a escolha do computador
+function getComputerChoice(){
+var randomNumber = Math.floor(Math.random()*3);
+if(randomNumber === 0){
+return 'bear';
+}
+else if(randomNumber === 1){
+return 'human';
+}
+else{
+return 'gun';
+}
+}
+
+//**função para determinar o vencedor
+
+function determineWinner(userChoice, computerChoice) {
+    if (userChoice === computerChoice) {
+        return 'deu empate!';
+    }
+    if (userChoice === 'humano') {
+        if (computerChoice === 'urso') {
+            return 'Você foi estraçalhado pelo urso';
+        } else {
+            return 'Você desarmou a arma!';
+        }
+    }
+    if (userChoice === 'urso') {
+        if (computerChoice === 'arma') {
+            return 'Você levou um tiro';
+        } else {
+            return 'Você estraçalhou o humano';
+        }
+    }
+    if (userChoice === 'arma') {
+        if (computerChoice === 'humano') {
+            return 'Você foi desarmado';
+        } else {
+            return 'Você atirou no urso';
+        }
+    }
+}
+
+//**texto para a escolha do usuário
+function playGame(){
+var promptUserchoice = prompt("escolha uma opção: urso, humano ou arma");
+var userChoice = getUserChoice;
+var computerChoice = getComputerChoice;
+console.log(UserChoice);
+console.log(computerChoice);
+console.log(determineWinner(userChoice, computerChoice));
+}
+playGame();
