@@ -1,0 +1,49 @@
+//teste de loops básicos com comandos para comparação
+//de true e false
+
+// '>'(maior que),
+// '<' (menor que),
+// '=='( igual a),
+// '!=' (diferente que)
+
+// && ou 'and' somam condições para true
+// || ou "or" dão alternativas para true
+
+//vamo tentar um jo-ken-po mais elaborado
+
+var computerChoice = Math.floor(Math.random()*3);
+if (computerChoice = 1){
+computerChoice = 'Jo'
+} else if (computerChoice = '2'){
+computerChoice = 'Ken'
+} else {
+computerChoice = 'Po'
+}
+
+var playerChoice = prompt('escolha Jo, Ken ou po');
+
+if (playerChoice == computerChoice){
+prompt('empate! Vamos de novo!')
+} else {
+if (playerChoice.toLowerCase == 'jo' ){
+if(computerChoice == 'Ken'){
+window.prompt('você ganhou!')
+} else if(computerChoice == 'Po'){
+window.prompt('você perdeu!')
+}
+}
+if (playerChoice.toLowerCase == 'ken' ){
+if(computerChoice == 'Po'){
+window.prompt('você ganhou!')
+} else if(computerChoice == 'Ken'){
+window.prompt('você perdeu!')
+}
+}
+if (playerChoice.toLowerCase == 'po' ){
+if(computerChoice == 'Jo'){
+window.prompt('você ganhou!')
+} else if(computerChoice == 'Ken'){
+window.prompt('você perdeu!')
+}
+}
+}
