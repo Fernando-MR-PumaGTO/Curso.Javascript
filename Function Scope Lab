@@ -1,0 +1,44 @@
+//function scope lab
+//scope determina onde a variável é definida
+//global scope e local scope
+//scope chain
+//usar o 'strict mode'
+
+function roadTrip() {
+var gallons = 12
+var mpg = 34
+return gallons * mpg
+}
+roadTrip();
+
+//segunda parte é transformar a função em uma global scope
+
+//possible solution
+//bad practice => best practice
+
+function roadTrip(){
+gallons = 12; //quando 'var' não vem antes da variável, ela automaticamente se torna uma variável global
+mpg = 34;
+return gallons * mpg;
+}
+roadTrip();
+
+//best practice
+
+//desafio
+//construir uma nested function
+//child scope => parent scope => global scope
+//run the results of the child scope
+
+//declarando a global scope
+var height = 10;
+
+function volume() {
+//parent variable
+var width = 10;
+var length = 10;
+var volumeOfObject = function(){
+return height * width * lenght;
+}
+
+}
