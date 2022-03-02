@@ -1,0 +1,24 @@
+// lab para fixar os conceitos de 'for' e 'while'
+//for(inicial;condição;incremento){}
+//while(condição){}
+
+var counter = 0;
+while (counter <= 10){
+console.log('verenice comeu '+ counter + ' bolos');
+counter++}
+
+//esse caiu num loop infinito na compilação e não sei porquê
+
+// lab para fixar os conceitos de 'for' e 'while'
+//for(inicial;condição;incremento){}
+//while(condição){}
+
+var notas = [8.5, 7.3, 5, 6.5, 4, 7, 7.5, 9, 9.5];
+
+for (i = 0; i <= notas.length; i++){
+if(notas[i] = 10){console.log('incrível! fechou a prova!')}
+else if(notas[i] >= 9){console.log('muito bem! excelente!')}
+else if(notas[i] > 7){console.log('ótima prova!')}
+else if(notas[i] >= 6){console.log('dá pra melhorar, ein')}
+else if(notas[i] > 4){console.log('precisa melhorar')}
+}
