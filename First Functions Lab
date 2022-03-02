@@ -1,0 +1,8 @@
+//segunda tentativa da função de bom dia
+//seguindo o guia do Udemi
+
+function goodMorningNeighbor(name, task){
+return 'good morning, ' + name+ ' thanks for ' + task + ' !'
+}
+
+goodMorningNeighbor('Joe', 'parking the car');
