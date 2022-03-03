@@ -1,0 +1,30 @@
+//segundo programa do lab de function programming
+// arrays também podem guardar objetos, como o array forecast[]
+
+var forecast = [
+    {day: 'Monday', sun: true},
+    {day: 'Tuesday', sun: false},
+    {day: 'Wednesday', sun: false},
+    {day: 'Thursday', sun: true},
+    {day: 'Friday', sun: false},
+    {day: 'Saturday', sun: false},
+    {day: 'Sunday', sun: true}
+]
+
+var sunnyDays = [];
+
+for(var i = 0; i < forecast.length; i++){
+    if(forecast[i].sun){
+    sunnyDays.push(forecast[i]);
+    }
+}
+sunnyDays;
+
+
+//agora usando a função .filter para fazer o trabalho do for + if
+
+var daysOfSun = forecast.filter(function(weather){
+    return weather.sun;
+})
+
+daysOfSun;
