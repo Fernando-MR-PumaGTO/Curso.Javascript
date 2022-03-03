@@ -1,0 +1,73 @@
+// array.reduce(function(accumulator, currentValue,currentIndex, array)initialValue)
+//                         required      required      optional    optionalx2
+//
+//                         result of      current
+//                      reduction so     value of
+//                           far           index
+
+// higher order function
+// two arguments
+
+// ex1
+
+var homeruns = [
+    {batter: 12},
+    {batter: 21},
+    {batter: 28},
+    {batter: 42},
+    {batter: 31},
+    {batter: 22},
+    {batter: 17},
+    {batter: 16},
+    {batter: 5}
+
+];
+//uma função reduce sem os parâmetros de acumulador e current value
+var totalHomers = homeruns.reduce(function(a, b){
+    console.log('accumulative', a, 'current ', b)
+    return a + b.batter;
+}, 0);
+
+totalHomers; // retorna 194
+
+
+
+
+
+// ex2: desafio
+// array de 5 elementos
+// achar sum, product, largest value
+
+
+var Verenice = [7, 300, 10, 4, 6 ]
+
+var totalVere = Verenice.reduce(function(a, b){
+    console.log(a, b);
+    return a + b;    
+})
+
+
+//usando .reduce pra achar o maior termo
+
+Verenice.reduce(function(acc, curr){
+    if (acc > curr) {
+    return acc
+    } else{ return curr;}
+
+})
+
+
+
+
+// ex3
+// usando .map em todos os elementos
+// usando reduce
+// usando cascata de funções
+
+var numbers = [1, 2, 3, 4];
+
+var triples = numbers.map(function(number){
+    return number * 3
+}).reduce(function(a, b){
+    return a + b;
+}, 0);
