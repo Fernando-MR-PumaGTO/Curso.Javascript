@@ -1,0 +1,54 @@
+//agora um código para treinar a função 'map'
+//ex 1
+
+var forecast = [
+    {day: 'Monday', sun: true, humidity: 10},
+    {day: 'Tuesday', sun: false, humidity: 100},
+    {day: 'Wednesday', sun: false, humidity: 100},
+    {day: 'Thursday', sun: true, humidity: 25},
+    {day: 'Friday', sun: false, humidity: 100},
+    {day: 'Saturday', sun: false, humidity: 100},
+    {day: 'Sunday', sun: true, humidity: 15}
+]
+
+
+var humid = []
+for (var i = 0; i < forecast.length; i++){
+    humid.push(forecast[i].humidity)
+}
+
+humid;
+
+
+//agora usando a função .map para fazer o mesmo serviço
+//map serve para preencher um array só com os dados escolhidos pela função
+
+var humid = forecast.map(function(wetness){
+    return wetness.humidity;    
+})
+
+
+/////////////////////////////////////////////////////////////
+
+
+//lab 2
+
+var numbers = [2,4,6,10,12]
+var double = numbers.map(function(mult){
+    return mult*2;
+}).map(function(mult){
+    return mult+1;
+})
+double;
+
+
+//agora uma com strings
+
+
+var verenice = ['gostosa','linda','boleira','ciclista','churrasqueira']
+
+var pappis = verenice.map(function(upper){
+    return upper.toUpperCase()
+})
+
+pappis;
