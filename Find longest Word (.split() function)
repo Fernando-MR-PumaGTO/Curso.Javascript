@@ -1,0 +1,39 @@
+//code for testing the .split() function.
+// .split() gives back the string without much splitting
+// .split('') gives back the string with every character split into differente elements
+// .split(' ') gives back the string with every interval with a ' ' split
+
+// ex1 code for finding the longest word on a string
+
+// " Então destrincharemos esse teste para ver no que vai dar "
+//recebe a string entrada pelo usuário
+var impStr = window.prompt('escreva sua frase');
+//console.log(impStr);
+
+checkStr = impStr.split(' ');
+//console.log(checkStr);
+//console.log(checkStr.length)
+
+var storageStr = [];
+for (i = 0; i < checkStr.length; i++){
+    if (checkStr[i].length > storageStr.length){
+        storageStr = checkStr[i];
+    } 
+    else {
+        
+    }    
+}
+console.log(storageStr);
+
+
+//outra solução
+
+function maxWord(str){
+    var words = str.split(' ');
+    var biggestWord = '';
+    for (var i = 0; i < words.length; i++){
+        if(biggestWord.length < words[i].length){
+            biggestWord = words[i];
+        }
+    }
+}
