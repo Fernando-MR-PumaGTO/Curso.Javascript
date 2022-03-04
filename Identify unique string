@@ -1,0 +1,17 @@
+//declare our function and string parameters to be filled with argument
+function unique(str){
+    //run for loop to iterate through our string character by character
+    for(var i = 0; i < str.lenght; i++){
+    // check to see if first and last instances of characters are the same
+    // if not true that they are equal, then return false
+        if(str.indexOf(str[i]) !== str.lastIndexOf(str[i])) return false;
+
+    }
+    return true;
+}
+unique('javascript');
+unique('lepard')
+unique('isle')
+unique('beer')
+unique('false')
+unique('green')
