@@ -1,0 +1,20 @@
+// math.max() will look at all the elements in an array and return the largest number
+// math.max(5,20); will return: 20
+// math.max(-8, -20); will return: -8
+// math.min() will return the smallest of numbers
+// x = 10;
+// y = -20;
+// math.min(x, y); returns: -20
+
+
+// ex1: create a code for sum of range of numbers
+
+var sumRange = 0;   // importante declarar como 0 pra não acumular em outras iterações
+var x = window.prompt('soma de um período entre números. \n entre o primeiro valor');
+var y = window.prompt('entre o segundo valor');
+    
+for (i = Math.min(x, y); i<= Math.max(x, y); i++) {
+    sumRange = sumRange + i    
+}
+
+alert('a soma do período entre ' + x + ' e ' + y + ' é ' + sumRange);
