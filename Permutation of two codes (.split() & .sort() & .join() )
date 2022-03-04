@@ -1,0 +1,46 @@
+//determine if two strings are a permutation of each other
+//test: check for equality in characters and amount of characters
+
+//array.sort() sorts the elements of an array in place and returns the array
+
+//var state = ['california', 'washington', 'Arizona'];
+//state.sort(); // returns ['Arizona', 'california', 'washington']
+
+//var scores = [3, 30, 1, 11];
+//scores.sort(); // returns [1, 11, 3, 30]
+
+
+// array.join() joins all elements of an array into a strings
+
+//var car = 'honda civic'
+//car.split(''); // returns [h,o,n,d,a, ,c,i,v,i,c]
+//car.split('').join(''); // returns ['honda civic']
+
+
+
+//ex1: code to find if two strings are a permutation of each other
+
+strImput1 = window.prompt('entre o primeiro termo:');
+strImput2 = window.prompt('entre o segundo termo:');
+
+if (strImput1.length == strImput2.length) {
+    var spell1 = strImput1.split('');
+    var spell2 = strImput2.split('');
+    //console.log(spell1, spell2);
+    var charList1 = spell1.sort();
+    var charList2 = spell2.sort();
+    //console.log(charList1, charList2)
+    if (charList1 = charList2){
+        alert(strImput1 + ' e ' + strImput2 +' são anagramas!')
+    }
+} 
+else {
+    alert('não são iguais');
+}
+
+
+//resolução modelo
+
+//function isPermutation(strImput1, strImput2) {
+//    return strImput1.split('').sort().join('') == strImput2.split('').sort().join('');
+//}
