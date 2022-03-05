@@ -1,0 +1,27 @@
+// array.slice() does not alter the original array but returns an altered version of the original array
+// var travel = ['boat','bus','car'];
+// var lessTravel = travel.slice(0,1);
+// lessTravel //returns ['boat'];
+// travel; ['boat','bus','car'];
+
+// array.splice() changes the content of an array by removing existing elements and/or adding new elements
+// array.splice(start, delete, additional elements);
+// var names = ['John','Sarah','Eric','Jane'];
+// names.splice(2, 0, 'Tom');
+// names; returns ['John','Sarah','Tom','Eric','Jane'];
+// names.splice(3,1);
+// names, //returns ['John','Sarah','Tom','Jane'];
+
+//ex1: code for removing n element of an array
+
+
+// declare function and pass parameters of array and elements to remove
+function chopper(arr, excess) {
+    // apply splice method to array and pass arguments of where to remove from array and how many elements
+    arr.splice(0, excess);
+    // return the value of the mutated array;
+    return arr;
+}
+
+// call the function with array argument and elements to be removed
+chopper(['JLKJLK', 'Fksfks', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October','November','December'], 2);
