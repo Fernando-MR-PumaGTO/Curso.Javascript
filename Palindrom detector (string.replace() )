@@ -1,0 +1,37 @@
+// str.replace(regexp | substr, newSubStr | function)
+// var milkAdd = 'Drink more milk';
+// var milkAlt = milkAdd.replace('milk','silk')
+// returns: milkAlt; 'Drink more silk'
+
+// var milkSub = milkAdd.replace(/milk/, 'soy milk')
+// returns: milkSub; 'Drink more soy milk'
+
+
+
+// ex: code to check if strings are palindromes
+// palindrome: arara, ovo, socorram me subi no onibus em marrocos
+
+
+var palImput = window.prompt('digite uma palavra que eu te digo \n se é palíndromo ou não')
+var palCheck = palImput.toLowerCase().slice('');
+console.log(palCheck, palCheck.length)
+for (i = 0; i < palCheck.length; i++) {
+    console.log(palCheck[i],palCheck[(palCheck.length - i)])
+    //if (palCheck[i] = palCheck[(palCheck.length - i)]){
+    //  ;
+    //} 
+    //else{ 
+    //    alert('não é não!')
+    //}
+}
+
+// não deu muito certo
+
+
+// código exemplo dado pelo curso
+
+function palindrom(str) {
+    // take string and remove all non-word characters and turn string into lowercase only
+    str = str.replace(/\W/g, '').toLowerCase()
+    return (str == str.split('').reverse().join(''))
+}
