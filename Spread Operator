@@ -1,0 +1,41 @@
+// let letters = ['a','b','c'];
+// console.log(letters) // returns ['a','b','c']
+// console.log(...letters) /// returns 'a' 'b' 'c'
+// using spread for joining arrays:
+
+//ES5 aproach
+
+// var alpha = ['a','b','c'];
+// var bet = ['d','e','f'];
+// var alphabet = alpha.concat(bet);
+// console.log(alphabet)
+
+// ES6 aproach
+
+// let bet = ['d','e','f'];
+// let alphabet = ['a','b','c',...bet];
+
+// using with functions
+
+// ES5
+
+// let first = [1,2,3];
+// let second = [2,4,6];
+
+// function productOfThree(a,b,c){
+//     let result = a * b * c;
+//     console.log(result)
+// }
+// productOfThree(first[0],first[1],first[2])
+
+//ES6
+
+let first = [1,2,3];
+let second = [2,4,6];
+
+function productOfThree(a,b,c){
+    let result = a * b * c;
+    console.log(result)
+}
+productOfThree(...first);
+productOfThree(...second);
