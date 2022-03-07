@@ -1,0 +1,23 @@
+//ex1 create two arrays adding them(in ES5 and ES6)
+
+//ES5
+//let bairros = ['Papicu', 'Cocó','Dionísio Torres']
+//let esconderijos = ['Barra d Ceará', 'Carlito Pamplona','Siqueira'];
+
+//let fortalCity = bairros.concat(esconderijos);
+//console.log(fortalCity);
+
+//ES6
+//console.log(...bairros,...esconderijos);
+//console.log(bairros, esconderijos);
+
+//or
+//let esconderijos = ['Barra d Ceará', 'Carlito Pamplona','Siqueira'];
+//let fortalCity['Papicu', 'Cocó','Dionísio Torres',...esconderijos];
+
+//ex2 create a function that will take 3 parameters from a spread operator
+let ironGuitars = ['Gears', 'McBrain', 'Smith']
+function ironMaiden(a,b,c){
+    return `Iron's guitars are played by ${a}, ${b} and ${c}`
+}
+ironMaiden(...ironGuitars);
