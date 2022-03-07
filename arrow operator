@@ -1,0 +1,20 @@
+// arrow function é um bagulho em ES6 que substitui a sintaxe das funções bind em ES5
+// ES5:
+// var es5Func = function(){ return 2;}
+
+// ES6:
+// let es6Func = () => 2;
+
+// arrow function para 1 parâmetro:
+// let cubed;
+// cubed = x => x * x * x; // não precisa usar o 'return' porque já está implícito
+// cubed = x => {return x * x * x;}; // precisa do 'return' por causa dos {}, mas não precisa do ()
+// cubed = (x) => x * x * x; // pode usar o (x) se quiser, mas não é obrigatório
+// cubed = (x) => {return x * x * x};
+
+// arrow function para 2 parâmetros
+// let add;
+// add = (x,y) => x + y; // aqui os (x,y) são obrigatórios porque há 2 parâmetros
+// add = (x,y) => {return x+y};
+// add = (x,y,z) => x + y + z;
+
