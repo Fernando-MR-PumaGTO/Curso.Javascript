@@ -1,0 +1,47 @@
+// TEMPLATE LITERALS
+
+// ES5
+
+// var toppings1 = 'pepperoni';
+// var toppings2 = 'mushrooms'/
+// var pizzaToppings = 'my favorite pizza has '+ toppings1 + ' and ' + toppings2 + '!';
+// pizzaToppings;
+// returns 'my favorite pizza has pepperoni and mushrooms!'
+
+// ES6
+
+// let toppings1 = 'pepperoni';
+// let toppings2 = 'mushrooms';
+// let pizzaToppings = `my favorite pizza has ${toppings1} and ${toppings2}!`
+// pizzaToppings;
+// returns 'my favorite pizza has pepperoni and mushrooms!'
+
+
+
+//ex1: create a multi-line string with ES5 and ES6
+
+//ES5
+var writeThis = ' então é assim \n que começam-se as guerras \n caindo aos pedaços\n sujando-se as terras';
+console.log(writeThis);
+
+//ES6
+let writeThat = `Então é assim
+que começam-se as guerras
+caindo aso pedaços
+sujando-se as terras`
+console.log(writeThat);
+
+
+//ex2: create a sentence using variables in ES5 and ES6
+
+//ES5
+var name1 = 'Marquinhos'
+var name2 = 'Ladeirada Morgota'
+
+console.log('taca-le pau '+ name1 + '! Desce com tudo na ' + name2 + '!')
+
+//ES6
+let nameA = 'Marquinhos'
+let nameB = 'Ladeira da Morgota'
+
+console.log(`Taca-le pau ${nameA}! Desce com tudo na ${nameB}!`);
