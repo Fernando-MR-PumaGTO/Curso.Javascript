@@ -1,0 +1,73 @@
+// FUNCTION SCOPE
+
+// var firstName = 'Joe'     // variável global
+// functiun surname(){
+//    var lastName = 'Smith' // variável dentro de uma função
+// }
+// console.log(furstName + '' + lastName);   // retorna 'error'
+
+
+// FUNCTION SCOPE
+// var count = 4;// if(true){
+//      var more = 1;
+// }
+// console.log(count+more) // returns 5
+
+
+// BLOCK SCOPE
+// let count = 4;
+// if(true){
+//    let more = 1;
+// }
+// console.log(count+more); // returns 'error'
+
+// 'var' - global scope
+// 'let' - block scope (avaluable only to the block it is declared)
+
+
+
+//ex1 code for showing differente in block scope use of 'let' and 'var'
+
+var a = 4;
+if(true){
+    var b = 5;
+}
+console.log (a*b);  // since both variables are global, it will return 20 as expected
+
+
+//ex1.b
+
+var a = 4;
+if(true){
+    let b = 5;
+}
+console.log(a * b); // now that b is a block variable, if the value of b isn't stored, it will return 'error'
+
+// var creates a block variable when placed inside a function
+//ex2 code for var as a block variable
+
+function varTest(){
+    var x = 1;
+    if(true){
+        var x = 2;
+    }
+    console.log(x)
+}
+varTest(); // will return 2, because var x = 1 is local only within the function, before the 'if'
+
+// ex.2.b
+ function varTest(){
+    var x = 1;
+    if(true){
+        let x = 2;
+    }
+    console.log(x)
+}
+varTest();  // will return 2, because the 'let' declaration makes the value '2' be true only within the 'if' bracket
+
+// CONST declaration makes sure the value declared is unchangeble
+const g = 12
+const API_SNK = 'whadahell'
+
+const g = 13 // returns error
+const API_SNK = 'isdat' // returns error
