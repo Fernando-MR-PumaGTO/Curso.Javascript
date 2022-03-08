@@ -11,3 +11,15 @@
 fullName = window.prompt('entre seu primeiro e último nomes')
 reverseName = fullName.split(' ').reverse().join(' ');
 console.log(reverseName)
+
+
+
+// Using functions
+
+let fullName = window.prompt('entre seu primeiro e último nomes')
+function nameSwap(str){
+   let arr = str.split(' ');
+   return arr[1] + ' ' + arr[0]
+}
+
+console.log(nameSwap(fullName));
