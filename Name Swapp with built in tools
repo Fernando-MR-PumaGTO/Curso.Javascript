@@ -1,0 +1,13 @@
+//create a code for swapping names positions
+
+//fullName = window.prompt('entre seu primeiro e último nomes')
+//splitName = fullName.split(' '); // até aqui tudo certo;
+      //lastName = splitName[splitName.length]; // lastName retorna 'undefined'
+//reverseName = splitName.reverse()
+//console.log(...reverseName)
+
+// OR
+
+fullName = window.prompt('entre seu primeiro e último nomes')
+reverseName = fullName.split(' ').reverse().join(' ');
+console.log(reverseName)
