@@ -1,0 +1,51 @@
+// calls back a function for every element in an array
+
+// ex1: code using 'for'
+// var scaryCreatures = ['lions', 'tigers', 'bears'];
+// for (var i = 0; i < scaryCreatures.length; i++){
+//     console.log(`Dorothy is afraid of ${scaryCreatures[i]}`);
+// }
+
+// using foreach
+// scaryCreatures.forEach(function(scaryCreatures){
+//    console.log(`Dorothy is afraid of ${scaryCreatures}`)
+// })
+
+
+//lab
+//ex1: 
+
+var colorArray = [
+    {color: 'red'}, {color: 'orange'}, {color: 'yellow'}
+];
+//for (i = 0; i < colorArray.length; i++){
+//   console.log(`i value: ${i} | Color name: ${colorArray[i].color}`)
+//}
+
+
+//forEach
+
+colorArray.forEach(function(color, index){
+    console.log(`i value ${index} | Color name: ${color.color}`)})
+
+
+
+
+//ex2:
+// usando 'for loop'
+
+var employees = [
+    {name:'Beth', title:'manager', salary:'90000'},
+    {name:'Bill', title:'developer', salary:'72000'},
+    {name:'Charlie', title:'support team member', salary:'50000'}
+]
+
+//for(i = 0; i < employees.length; i++){
+//    console.log(`${i+1}: ${employees[i].name} is a ${employees[i].title} who makes ${employees[i].salary} every year.`)
+//}
+
+//usando 'forEach'
+
+employees.forEach(function(i, employee){
+    console.log(`${i+1}: ${employee.name} is a ${employee.title} who makes ${employee.salary} every year.`)
+})
