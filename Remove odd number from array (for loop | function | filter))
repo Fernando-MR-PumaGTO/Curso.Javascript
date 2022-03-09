@@ -1,0 +1,83 @@
+// removes odd numbers from an array
+
+// create a function that takes an array of numbers and returns
+// only even values. The function should return an array containing only
+// odd numbers
+
+
+// EX1: USING FOR LOOP OPERATOR
+
+// para usar um array fixo
+// let numberArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]; 
+
+
+
+// para usar um array definido pelo usuário
+// let numElements = window.prompt('quantos elementos?')
+// let numberArray = [];
+// for (y = 0; y < numElements; y++){
+//     numberArray[y] = window.prompt(`entre o ${y+1}º elemento`);
+// }
+
+
+//loop for para preencher o array com os números ímpares;
+// let oddNumbers = [];
+// let a = 0;
+// for (i = 0; i < numberArray.length; i++){
+//     if (numberArray[i]/2 != Math.floor(numberArray[i]/2) ){
+//         oddNumbers[a] = numberArray[i]
+//         a++;
+//     }
+// }
+// console.log(oddNumbers);
+
+
+
+
+
+// OR 
+
+// function evensOnly(arr){
+//    var evenArray = [];
+//    for ( var i = 0; i < arr; i++){
+//        if (arr[i] % 2 === 0){
+//            evenArray.push(arr[i]);
+//        }
+//    }
+// }
+// return evenArray;
+
+
+
+
+
+// EX2 USANDO FILTER METHOD
+
+
+// para usar um array definido pelo usuário
+ let numElements = window.prompt('quantos elementos?')
+ let numberArray = [];
+ for (y = 0; y < numElements; y++){
+     numberArray[y] = window.prompt(`entre o ${y+1}º elemento`);
+ }
+
+
+// tentativa de loop para criar um array customizado pelo usuário
+// com código mais eficiênte que anterior, com menos variáveis
+
+// var numArray = new Array();
+// while (repeat != n){
+//     var number = prompt('enter element value');
+//     var number.push(number);
+//     var repeat = prompt('do you want to enter another value? y or n?');
+// }
+// then what now?
+
+
+//Filter function part
+
+var evenArray = numberArray.filter(function(number){
+    return number % 2 === 0;
+})
+console.log(...evenArray)
+
