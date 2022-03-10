@@ -1,0 +1,12 @@
+// appendChild() -> adds a node to the end of the list of children of a specified parent node.
+// removeChild() -> removes a child node from the DOM
+// createElement() -> creates the HTML element specified by tagName
+// firstChild -> read-only propery returns the node's first child in the tree
+
+var toDo = document.createElement('li');   //cria uma variável do tipo lista('li')
+
+var todosList = document.querySelector('ul'); // cria uma variável que vai entrar para a lista de itens 'ul'
+
+toDo.textContent = 'seja um exemplo'   //variável 'toDo' recebe conteúdo de texto (.textContent)
+
+todosList.appendChild(toDo) // variável 'todosList' acrescenta o conteúdo de 'toDo' a lista de elementos 'ul'
