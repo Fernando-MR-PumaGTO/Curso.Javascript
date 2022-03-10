@@ -1,0 +1,14 @@
+// addEventListener() -> attaches an event handler to the specified element
+// attaches an element without overwriting existing event handlers.
+// syntax -> element.addEventListener(event, function);
+
+// task -> add an 'addEventlistener' on our button element.Pass ir to a 'click' event and for the second argument a console.log('you have clicked the button')
+
+var button = document.querySelector('button')
+// or
+// var button = document.getElementById('clear')
+// var button = document.querySelector('#clear')
+
+button.addEventListener('click', function() {
+	alert('click me daddy!')
+});
