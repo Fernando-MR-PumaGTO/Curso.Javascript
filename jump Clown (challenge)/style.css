@@ -1,0 +1,21 @@
+#backpage {
+    display: flex;
+    background: fixed skyblue;
+    height: 95vh;
+    width: 95vw;
+    align-items: center;
+    justify-content: center;
+}
+
+#clown img{
+    position:absolute;
+    padding: 15px;
+    border-radius: 4px;
+    max-height: 250px;
+    transition-property: transform;
+    transition-duration: .1s;
+}
+
+#clown img:hover{
+    transform: scale3d(1.2, 1.2, 1) rotate(45deg);
+}
